@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 function Header() {
   return (
@@ -7,8 +8,9 @@ function Header() {
         <div className="logo">
           <img src="https://olcha.uz/_nuxt/logo-red.e48e0ab8.svg" alt="logo" />
         </div>
-        <div className="katalog">
-          <i className="fa-solid fa-bars"></i>
+        <div className="katalog flex">
+          <i class="fa fa-bars"></i>
+          <p>Katalog</p>
         </div>
       </div>
     </div>

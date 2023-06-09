@@ -8,3 +8,25 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.katalog {
+  width: 162px;
+  height: 43px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.katalog i {
+  width: 20px;
+  height: 14px;
+}
+
+.katalog p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.katalog:hover {
+  
+}
