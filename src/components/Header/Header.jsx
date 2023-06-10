@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import Katalog from "../Katalog/Katalog";
 
 function Header() {
   return (
@@ -44,6 +45,9 @@ function Header() {
             <p>Kirish</p>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <Katalog />
       </div>
     </div>
   );
