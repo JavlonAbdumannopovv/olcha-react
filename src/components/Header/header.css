@@ -14,10 +14,11 @@
 .katalog {
   width: 162px;
   height: 43px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 10px;
   justify-content: space-around;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
 .katalog i {
@@ -31,7 +32,7 @@
 
 .katalog:hover{
   color: #da002b;
-  border: 1px solid #da002b;
+  border: 2px solid #da002b;
 }
 
 .bottom-header__search {
@@ -44,10 +45,10 @@
 .form-search__btn,
 .form-search__input {
   height: 44px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease;
 }
 .form-search__input {
-  width: 661px;
+  width: 600px;
   background-color: transparent;
   color: #111;
   font-size: 16px;
@@ -75,6 +76,14 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.form-search__btn:hover {
+  transform: scale(1.05);
+}
+
+.form-search__btn i {
+  font-size: 21px;
 }
 
 .actions {

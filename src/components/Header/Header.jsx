@@ -1,29 +1,32 @@
 import React from "react";
 import "./header.css";
 import Katalog from "../Katalog/Katalog";
+import { useDispatch, useSelector } from "react-redux";
+import { katalogOpenClose } from "../../slice/home-slice";
 
 function Header() {
+  const katalog = useSelector((state) => state.home.katalog);
+  const dispatch = useDispatch();
+
   return (
     <div id="header">
       <div className="container flex">
         <div className="logo">
           <img src="https://olcha.uz/_nuxt/logo-red.e48e0ab8.svg" alt="logo" />
         </div>
-        <div className="katalog flex">
-          <i className="fa fa-bars"></i>
+        <button className="katalog flex" onClick={() => {dispatch(katalogOpenClose())}}>
+          <i className={`${katalog.icon}`}></i>
           <p>Katalog</p>
-        </div>
+        </button>
         <div className="bottom-header__search">
           <div className="form-search flex">
             <input
               className="form-search__input"
               placeholder="Katalog bo'yicha qidirish"
-              type="text"
+              type="search"
             />
             <button aria-label="Search button" className="form-search__btn">
-              <span>
-                <img src="/_nuxt/search.2a234c15.svg" alt="search" />
-              </span>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
         </div>
@@ -46,8 +49,8 @@ function Header() {
           </div>
         </div>
       </div>
-      <div class="container">
-        <Katalog />
+      <div className="container">
+        {katalog.active ? <Katalog /> : null} 
       </div>
     </div>
   );

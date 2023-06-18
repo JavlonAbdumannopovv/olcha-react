@@ -1,0 +1,69 @@
+.Katalog {
+  position: fixed;
+  background: #fff;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 635px;
+  margin: 30px 0 0;
+  box-shadow: 0 10px 16px #0000001a;
+  z-index: 999;
+}
+
+.Katalog .sidebar {
+  width: 420px;
+  height: 635px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar ul li {
+  width: 291px;
+  height: 64px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.sidebar ul li:hover {
+  color: #DA002b;
+  background: #f2f2f2;
+}
+
+.katalog_main {
+  width: 100%;
+  height: 635px;
+  padding: 24px 24px 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.katalog_main h3{
+  padding: 3px 0;
+  margin: 0 0 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.katalog_main p{
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.katalog_main h3:hover,
+.katalog_main p:hover {
+  color: #DA002b;
+}
+
+.katalog_box { 
+  width: 238px; 
+  padding: 0 32px 0 0;
+}

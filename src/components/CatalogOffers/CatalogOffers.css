@@ -1,0 +1,33 @@
+#CatalogOffers {
+  width: 100%;
+}
+
+#CatalogOffers .offers_body {
+  width: 100%;
+}
+
+#CatalogOffers .offers_products {
+  width: 1160px;
+}
+
+#CatalogOffers .offers_sidebar {
+  width: 272px;
+  height: 444px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#CatalogOffers .offers_sidebar img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+#CatalogOffers .offers_sidebar img:hover {
+  transform: scale(1.05);
+}
+
+#CatalogOffers .offers_category {
+  margin: 30px 0 0;
+}

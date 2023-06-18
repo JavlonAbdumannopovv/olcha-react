@@ -1,0 +1,42 @@
+.Categories {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.category {
+  padding: 0 30px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category_img {
+  width: 180px;
+  height: 168px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.category_img img {
+  width: 132px;
+  height: 132px;
+  transition: all 0.4s ease;
+}
+
+.category_img img:hover {
+  transform: scale(1.05);
+}
+
+.category p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px;
+}
+
+.category p:hover {
+  color: #da002b;
+}

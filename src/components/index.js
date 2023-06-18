@@ -1,1 +1,9 @@
 export {default as Header} from "./Header/Header";
+export {default as Hero} from "./Hero/Hero";
+export {default as Triple} from "./Triple/Triple";
+export {default as Popular} from "./Popular/Popular";
+export {default as Product} from "./Product/Product";
+export {default as CatalogVideo} from "./CatalogVideo/CatalogVideo";
+export {default as CatalogBig} from "./CatalogBig/CatalogBig";
+export {default as CatalogOffers} from "./CatalogOffers/CatalogOffers";
+export {default as Category} from "./Category/Category";

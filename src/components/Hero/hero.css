@@ -1,0 +1,50 @@
+#hero {
+  width: 100%;
+}
+
+#hero_slider{
+  width: 1106px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+#slider_content {
+  position: relative;
+  left: 0;
+  width: 7742px;
+  height: 382px;
+  display: flex;
+  align-items:center;
+  cursor: pointer;
+}
+
+#slider_content img {
+  width: 1106px;
+  height: 382px;
+}
+
+#hero_slider i {
+  position: absolute;
+  top: 180px;
+  font-size: 15px;
+  background: #fff;
+  padding: 12px 15px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px 1px #0000001a;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+#hero_slider i:hover {
+  box-shadow: 0 1px 1px 1px transparent;
+}
+
+.fa-chevron-left {
+  left: 20px;
+}
+
+.fa-chevron-right {
+  right: 20px;
+}
